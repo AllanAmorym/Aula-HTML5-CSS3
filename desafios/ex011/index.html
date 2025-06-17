@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas HTML</title>
+</head>
+<body>
+    <h1>Imagens HTML</h1>
+    <p>Tente abrir esse site em varios tamanhos: </p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" 
+        type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" 
+        type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem Flexível">
+
+        <audio preload="metadata" controls>
+            <source src="midia/marilia-mendoca.mp3.mp3" type="audio/mpeg">
+            <source src="midia/marilia-mendoca.mp3.mp3" type="audio/ogg">
+            <source src="midia/marilia-mendoca.mp3.mp3" type="audio/wav">
+            <p>Foi mal! Não conseguimos rodar seu audio, mas <a href="midia/marilia-mendoca.mp3.mp3" target="_blank"
+            rel="external">
+            </a></p>
+        </audio>
+    </picture>
+</body>
+</html>
