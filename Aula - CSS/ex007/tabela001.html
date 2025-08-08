@@ -10,17 +10,18 @@
         }
         table{
             width: 600px;
+            height: 600px;
             border-collapse: collapse;
-        }
-        .linha{
-            background-color: yellow;
-        }
-        .dado{
-            background-color: red;
         }
         td {
             border: 2px solid black;
             padding: 8px;
+            text-align: left;
+            vertical-align: middle;  /* Para centralizar no eixo vertical, já que 
+            no text-aline não funciona*/
+        }
+        .numero{
+            text-align: right;
         }
     </style>
 </head>
@@ -35,20 +36,20 @@
 
     <h1>Minha primeira Tabela</h1>
     <table>
-        <tr class="linha">  <!--1 Linha-->
-            <td class="dado">A1</td> 
+        <tr>  <!--1 Linha-->
+            <td>A1</td> 
             <td>B1</td> 
-            <td>C1</td> 
+            <td class="numero">C1</td> 
         </tr>
         <tr>    <!--2 Linha-->
             <td>A2</td> 
             <td>B2</td> 
-            <td>C2</td> 
+            <td class="numero">C2</td> 
         </tr>
         <tr>    <!--3 Linha-->
-            <td class="dado">A3</td>
+            <td>A3</td>
             <td>B3</td>
-            <td>C3</td>
+            <td class="numero">C3</td>
         </tr>
     </table>
 </body>
